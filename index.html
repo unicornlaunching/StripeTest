@@ -14,21 +14,13 @@
 
   <body>
     
-    
-    
-    const stripe = require('stripe')('sku_GUkp8r3WkOBrs3');
+    <script src = "https://js.stripe.com/v3"></script>
 
-// Create a payment from a test card token.
-const charge = await stripe.charges.create({
-  amount: 2000,
-  currency: 'cad',
-  source: 'tok_amex',
-  description: 'My first payment'
-});
-    
-    
-    
-    
+<button id ="checkout-button-sku_GUkp8r3WkOBrs3" role = "link">
+
+Checkout
+
+</button>   
     
     
     
