@@ -13,6 +13,34 @@
   </head>
 
   <body>
+    
+    
+    
+    const stripe = require('stripe')('sk_test_BQokikJOvBiI2HlWgH4olfQ2');
+
+// Create a payment from a test card token.
+const charge = await stripe.charges.create({
+  amount: 2000,
+  currency: 'cad',
+  source: 'tok_amex',
+  description: 'My first payment'
+});
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="sr-root">
       <div class="sr-main">
         <header class="sr-header">
